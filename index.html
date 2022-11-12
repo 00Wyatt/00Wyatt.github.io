@@ -11,79 +11,148 @@
 </head>
 
 <body>
-    <div class="container">
+    <main>
         <header>
-            <nav>
-                <a class="logo" href="#hero">Wyatt Channings</a>
-                <ul>
-                    <li><a class="link" href="#portfolio">Portfolio</a></li>
-                    <li><a class="link" href="#about">About</a></li>
-                    <li><a class="link" href="#contact">Contact</a></li>
-                </ul>
-                <div>
-                    <a class="icon" href="#" aria-label="LinkedIn" title="LinkedIn">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a class="icon" href="#" aria-label="GitHub" title="GitHub">
-                        <i class="bi bi-github"></i>
-                    </a>
-                    <a class="resume button" href="#">Resume</a>
-                </div>
-            </nav>
+            <div class="container">
+                <nav>
+                    <a class="logo" href="#">Wyatt.</a>
+                    <ul id="navLinks">
+                        <li><a class="link" href="#portfolio">Portfolio</a></li>
+                        <li><a class="link" href="#about">About</a></li>
+                        <li><a class="link" href="#contact">Contact</a></li>
+                    </ul>
+                    <div>
+                        <a class="icon" href="https://www.linkedin.com/in/wyatt-channings/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a class="icon" href="https://github.com/00Wyatt" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub" title="GitHub"><i class="bi bi-github"></i></a>
+                        <a class="resume btn btn-primary" href="#">Resume</a>
+                    </div>
+                    <a id="hamburger" class="hamburger" href="#"><i class="bi bi-list"></i></a>
+                </nav>
+            </div>
         </header>
         <section id="hero" class="hero">
-            <div>
-                <h1>Hi, I'm Wyatt.</h1>
-                <p>
-                    I’m a <span>Frontend Developer</span> passionate about<br>
-                    creating quality experiences on the web.
-                </p>
-                <a class="button" href="#portfolio">See my work</a>
+            <div class="container">
+                <div class="content">
+                    <h1>Hi, I'm Wyatt.</h1>
+                    <p>
+                        I’m a <span>Frontend Developer</span> passionate about
+                        creating quality experiences on the web.
+                    </p>
+                    <a class="btn btn-grey" href="#portfolio">View my work</a>
+                </div>
+                <div class="chevron">
+                    <i class="bi bi-chevron-down"></i>
+                </div>
             </div>
-            <i class="bi bi-chevron-down chevron-down"></i>
         </section>
         <section id="portfolio" class="portfolio">
-            <div>
-                <h2>My projects.</h2>
+            <div class="container">
+                <div class="heading">
+                    <h2>My projects.</h2>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <a href="#portfolio"><img src="./assets/bb-screenshot.png" alt="Brick-by-Brick screenshot."></a>
+                        <div class="card-text">
+                            <h3><a class="link" href="https://00wyatt.github.io/brick-by-brick-prototype/"
+                                    target="_blank" rel="noopener noreferrer">Brick-by-Brick</a></h3>
+                            <p>This website is for LEGO collectors to catalogue and share their collections with the
+                                world.</p>
+                            <a class="link-u" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="placeholder"></div>
+                        <div class="card-text">
+                            <h3><a class="link" href="#">Todo List</a></h3>
+                            <p>This website is a convenient Todo List application created with Meteor.js and React.</p>
+                            <a class="link-u" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="about" class="about">
-            <div>
-                <h2>A bit about me...</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident animi ad quibusdam aliquam
-                    inventore rem dolor quas eligendi at ipsa quia, omnis a incidunt sunt qui consectetur assumenda
-                    eaque perspiciatis!
-                    Nulla nobis ducimus necessitatibus tempore cumque voluptatum maiores, exercitationem quam magni
-                    deleniti quidem labore ullam modi quo sapiente veniam sint enim ipsam. Nemo eos, delectus et
-                    blanditiis quisquam tempore itaque?
-                    Praesentium, debitis culpa? Animi, odit? Dolorem tenetur distinctio quo suscipit ipsam esse
-                    voluptatibus quod, veniam nulla, harum, consequatur autem expedita ut! Earum, accusantium laborum?
-                    Quaerat fuga obcaecati cupiditate voluptate voluptates.
-                    Magni in veritatis quisquam, voluptas, nobis minima enim voluptatem quis veniam hic unde harum iure
-                    nesciunt perspiciatis! Molestiae inventore veritatis ducimus mollitia ex voluptates dicta doloremque
-                    laborum fuga, dolorem impedit?</p>
+            <div class="container">
+                <div class="heading">
+                    <h2>A bit about me.</h2>
+                </div>
+                <div class="content">
+                    <p>I’m a Frontend Development student based in Perth, currently completing a Diploma of
+                        Information
+                        Technology at North Metropolitan TAFE. During my studies, I have developed skills in
+                        liaising
+                        with clients, documentation, coding, testing, project management techniques, and advanced
+                        soft
+                        skills such as communication team work.</p>
+                    <p>I am seeking an opportunity to expand my abilities and grow within an organisation.</p>
+                    <div>
+                        <h3>Skills</h3>
+                        <ul class="skills">
+                            <li>HTML</li>
+                            <li>CSS/SASS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                            <li>Git/GitHub</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                    <p>When I’m not writing code, I enjoy getting outdoors with my camera, and I’m either hiking in
+                        summer, or snowboarding in winter. I have a passion for learning new things and avidly read
+                        as
+                        widely as I can. You can see more about what I get up to on <a class="link-u"
+                            href="https://www.instagram.com/wyatt.channings/" target="_blank"
+                            rel="noopener noreferrer">Instagram</a>.</p>
+                </div>
             </div>
         </section>
         <section id="contact" class="contact">
-            <div>
-                <h2>Get in touch.</h2>
-                <p>Have a question or want to work together?</p>
-                <form action="#">
-                    <button class="button" type="submit">Send</button>
-                </form>
-                <p>Connect on <a class="link" href="#">LinkedIn</a></p>
-                <p>Check out my <a class="link" href="#">Github</a></p>
+            <div class="container">
+                <div class="heading">
+                    <h2>Get in touch.</h2>
+                </div>
+                <div class="content">
+                    <p>Have a question or want to work together?</p>
+                    <form id="form" action="https://formsubmit.co/wyattchannings+site@gmail.com" method="POST">
+                        <!-- Redirect -->
+                        <input type="hidden" name="_next" value="https://wyattchannings.com#contact">
+                        <!-- Honeypot -->
+                        <input type="text" name="_honey" style="display:none">
+                        <!-- Disable reCAPTCHA -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- Email template -->
+                        <input type="hidden" name="_template" value="box">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button class="btn btn-primary" type="submit">Send</button>
+                    </form>
+                    <p>Connect on <a class="link-u" href="https://www.linkedin.com/in/wyatt-channings/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a></p>
+                    <p>Check out my <a class="link-u" href="https://github.com/00Wyatt" target="_blank"
+                            rel="noopener noreferrer">Github</a></p>
+                </div>
             </div>
-            <div class="chevron-container">
-                <a href="#hero">
-                    <i class="bi bi-chevron-double-up chevron-up"></i>
-                </a>
+            <div class="chevron">
+                <a href="#"><i class="bi bi-chevron-double-up"></i></a>
             </div>
         </section>
         <footer>
-            <p>© Wyatt Channings 2022</p>
+            <div class="container">
+                <p>Designed and developed by Wyatt Channings © 2022</p>
+            </div>
         </footer>
-    </div>
+    </main>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
