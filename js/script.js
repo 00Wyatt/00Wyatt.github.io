@@ -1,12 +1,20 @@
 // Show and hide navbar links
 function toggleNav() {
     'use strict';
-    var x = document.getElementById("navLinks");
-    if (!x.classList.contains("open")) {
-        x.classList.add("open");
-    } else {
-        x.classList.remove("open");
+    // var links = document.getElementById("navLinks");
+    var links = document.getElementsByClassName("navLinks");
+    for (let i = 0; i < links.length; i++) {
+        if (!links[i].classList.contains("open")) {
+            links[i].classList.add("open");
+        } else {
+            links[i].classList.remove("open");
+        }
     }
+    // if (!links.classList.contains("open")) {
+    //     links.classList.add("open");
+    // } else {
+    //     links.classList.remove("open");
+    // }
 }
 
 // Open To-do List modal
