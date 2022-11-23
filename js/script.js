@@ -1,7 +1,6 @@
 // Show and hide navbar links
 function toggleNav() {
     'use strict';
-    // var links = document.getElementById("navLinks");
     var links = document.getElementsByClassName("navLinks");
     for (let i = 0; i < links.length; i++) {
         if (!links[i].classList.contains("open")) {
@@ -10,11 +9,6 @@ function toggleNav() {
             links[i].classList.remove("open");
         }
     }
-    // if (!links.classList.contains("open")) {
-    //     links.classList.add("open");
-    // } else {
-    //     links.classList.remove("open");
-    // }
 }
 
 // Open To-do List modal
